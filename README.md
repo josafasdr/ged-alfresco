@@ -1,2 +1,2 @@
 # ged-alfresco
-Gestão eletrônica de Documentos com a ferramenta Alfresco Community Edition.
+Gestão Eletrônica de Documentos com a ferramenta Alfresco Community Edition.

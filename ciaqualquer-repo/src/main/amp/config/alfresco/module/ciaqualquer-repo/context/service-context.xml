@@ -25,7 +25,7 @@
         Note. this module component will only be executed once, and then there will be an entry for it in the Repo.
         So doing for example $ mvn clean install -Pamp-to-war twice will only execute this component the first time.
         You need to remove /alf_data_dev for it to be executed again. -->
-    <bean id="br.ciaqualquer.ciaqualquer_repo.exampleComponent" class="br.ciaqualquer.ciaqualquer_repo.demoamp.DemoComponent" parent="module.baseComponent" >
+    <bean id="br.ciaqualquer.ciaqualquer_repo.exampleComponent" class="br.ciaqualquer.demoamp.DemoComponent" parent="module.baseComponent" >
         <property name="moduleId" value="ciaqualquer-repo" />  <!-- See module.properties -->
         <property name="name" value="exampleComponent" />
         <property name="description" value="A demonstration component" />

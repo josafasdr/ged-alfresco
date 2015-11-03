@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model name="myw:workflowModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+<model name="cqw:workflowModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
     <!-- Optional meta-data about the model -->
-    <description>Workflow Model for Repo Extension X</description>
-    <author>My Name</author>
+    <description>Workflow Model for Repo Extension Cia Qualquer</description>
+    <author>Josafá Santos</author>
     <version>1.0</version>
 
     <imports>
@@ -16,11 +16,27 @@
 
     <!-- Custom namespace for your domain -->
     <namespaces>
-        <namespace uri="http://www.mycompany.com/model/workflow/1.0" prefix="myw"/>
+        <namespace uri="http://www.ciaqualquer.br/model/workflow/1.0" prefix="cqw"/>
     </namespaces>
 
     <!-- ===============================================================================================================
         Constraints, Types, and Aspects go here...
         -->
+	
+	<types>
+	
+		<type name="cqw:submeter_tarefa_ola_mundo">
+			<parent>bpm:startTask</parent>
+			<properties>
+				<property name="cqw:ola_nome">
+					<type>d:text</type>
+					<mandatory>true</mandatory>
+					<multiple>false</multiple>
+				</property>
+			</properties>
+		</type>
+	
+	</types>
+	
 </model>
 

@@ -1,0 +1,29 @@
+<alfresco-config>
+    <config evaluator="string-compare" condition="activiti$ola-mundo-IU">
+      <forms>
+         <form>
+            <field-visibility>
+               <show id="bpm:workflowDescription" />
+               <show id="packageItems" />
+               <show id="cqw:ola_nome" />
+               <show id="transitions" />
+               <show id="bpm:status" />
+            </field-visibility>
+            <appearance>
+               <set id="" appearance="title" label-id="workflow.set.general" />
+               <set id="itens" appearance="title" label-id="workflow.set.items" />
+               <set id="progresso" appearance="title" label-id="workflow.set.task.progress" />
+               <set id="outro" appearance="title" label-id="workflow.set.other" />
+               <field id="bpm:workflowDescription" label-id="workflow.field.message">
+                  <control template="/org/alfresco/components/form/controls/textarea.ftl">
+                     <control-param name="style">width: 95%</control-param>
+                  </control>
+               </field>
+               <field id="packageItems" set="itens" />
+               <field id="cqw:ola_nome" set="outro" />
+               <field id="bpm:status" set="progresso" />
+            </appearance>
+         </form>
+      </forms>
+    </config>
+</alfresco-config>

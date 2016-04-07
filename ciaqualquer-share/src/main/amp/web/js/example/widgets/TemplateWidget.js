@@ -11,10 +11,8 @@ define(["dojo/_base/declare",
             cssRequirements: [{cssFile:"./css/TemplateWidget.css"}],
             
             buildRendering: function example_widgets_TemplateWidget__buildRendering() {
-                this.greeting = this.message('hello-label');
-
+                this.greeting = this.message('hello-label') + " " + this.message('hello-test');
                 this.inherited(arguments);
-
             }
         });
 });

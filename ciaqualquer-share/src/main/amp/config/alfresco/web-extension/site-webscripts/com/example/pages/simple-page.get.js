@@ -10,13 +10,16 @@ model.jsonModel = {
         id: "MY_HORIZONTAL_WIDGET_LAYOUT",
         name: "alfresco/layout/HorizontalWidgets",
         config: {
-            widgetWidth: 100,
+            widgetWidth: 50,
             widgets: [
                 {
                     name: "alfresco/logo/Logo",
                     config: {
                         logoClasses: "alfresco-logo-only"
                     }
+                },
+                {
+                	name: "tutorial/Notificacao"
                 },
                 {
                 	name: "tutorial/HelloWorld"
